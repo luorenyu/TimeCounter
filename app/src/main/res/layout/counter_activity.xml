@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <ListView
+            android:id="@+id/content_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </ScrollView>
+
+    <TextView
+        android:gravity="center"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="任务总耗时 -- 3H:30m:50s"
+        android:textSize="@dimen/size30"
+        />
+
+    <LinearLayout
+        android:id="@+id/edit_item"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@android:color/holo_blue_dark"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <EditText
+            android:id="@+id/hour"
+            android:gravity="center"
+            android:textSize="@dimen/size25"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/size25"
+            android:text="H  :"
+            />
+        <EditText
+            android:id="@+id/minites"
+            android:gravity="center"
+            android:textSize="@dimen/size25"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/size25"
+            android:text="m  :"
+            />
+        <EditText
+            android:id="@+id/seconds"
+            android:gravity="center"
+            android:textSize="@dimen/size25"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/size25"
+            android:text="s"
+            />
+        <Button
+            android:id="@+id/finished"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/finished"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@android:color/holo_green_dark"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/btn_equal"
+                android:layout_centerInParent="true"
+                android:background="@drawable/equal"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/btn_add"
+                android:layout_centerInParent="true"
+                android:background="@drawable/add"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/btn_clear"
+                android:layout_centerInParent="true"
+                android:background="@drawable/full_trash"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
