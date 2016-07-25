@@ -11,21 +11,22 @@
         />
 
     <TextView
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
         android:id="@+id/tv_result"
-        android:gravity="center"
         android:background="@android:color/holo_orange_dark"
         android:textColor="@android:color/black"
         android:textStyle="bold"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:text="@string/preword"
-        android:textSize="@dimen/size30"
+        android:textSize="@dimen/size25"
         />
 
     <LinearLayout
         android:id="@+id/edit_item"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:gravity="center"
         android:background="#009870"
         android:orientation="horizontal"
@@ -33,12 +34,15 @@
         >
 
         <EditText
+            android:singleLine="true"
+            android:imeOptions="actionNext"
             android:id="@+id/hour"
             android:gravity="center"
-            android:textSize="@dimen/size25"
+            android:textSize="@dimen/size20"
             android:layout_width="50dp"
             android:layout_height="match_parent" />
         <TextView
+            android:textStyle="bold"
             android:gravity="center"
             android:layout_width="50dp"
             android:layout_height="match_parent"
@@ -46,12 +50,16 @@
             android:text="H  :"
             />
         <EditText
+            android:singleLine="true"
+            android:maxLength="2"
+            android:imeOptions="actionNext"
             android:id="@+id/minites"
             android:gravity="center"
-            android:textSize="@dimen/size25"
+            android:textSize="@dimen/size20"
             android:layout_width="50dp"
             android:layout_height="match_parent" />
         <TextView
+            android:textStyle="bold"
             android:gravity="center"
             android:layout_width="50dp"
             android:layout_height="match_parent"
@@ -59,9 +67,12 @@
             android:text="m  :"
             />
         <EditText
+            android:singleLine="true"
+            android:maxLength="2"
+            android:imeOptions="actionDone"
             android:id="@+id/seconds"
             android:gravity="center"
-            android:textSize="@dimen/size25"
+            android:textSize="@dimen/size20"
             android:layout_width="50dp"
             android:layout_height="match_parent" />
         <TextView
@@ -70,20 +81,21 @@
             android:layout_height="match_parent"
             android:textSize="@dimen/size25"
             android:text="s"
+            android:textStyle="bold"
             />
         <Button
+            android:gravity="center_vertical"
             android:id="@+id/finished"
-            android:layout_marginLeft="10dp"
             android:background="@drawable/finished"
-            android:layout_width="50dp"
-            android:layout_height="45dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="55dp"
         android:orientation="horizontal"
         android:background="@android:color/holo_green_dark"
         >
@@ -99,8 +111,8 @@
                 android:id="@+id/btn_equal"
                 android:layout_centerInParent="true"
                 android:background="@drawable/equal"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="@dimen/menuIconSize"
+                android:layout_height="@dimen/menuIconSize"
                 />
 
         </RelativeLayout>
@@ -115,8 +127,8 @@
                 android:id="@+id/btn_add"
                 android:layout_centerInParent="true"
                 android:background="@drawable/add"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="@dimen/menuIconSize"
+                android:layout_height="@dimen/menuIconSize"
                 />
         </RelativeLayout>
         <RelativeLayout
@@ -130,8 +142,8 @@
                 android:id="@+id/btn_clear"
                 android:layout_centerInParent="true"
                 android:background="@drawable/full_trash"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="@dimen/menuIconSize"
+                android:layout_height="@dimen/menuIconSize"
                 />
         </RelativeLayout>
     </LinearLayout>

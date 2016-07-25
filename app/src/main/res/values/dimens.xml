@@ -7,5 +7,9 @@
     <dimen name="size20">20sp</dimen>
     <dimen name="size22">22sp</dimen>
     <dimen name="size25">25sp</dimen>
+    <dimen name="size28">28sp</dimen>
     <dimen name="size30">30sp</dimen>
+
+    <!--MenuIcon-->
+    <dimen name="menuIconSize">40dp</dimen>
 </resources>
