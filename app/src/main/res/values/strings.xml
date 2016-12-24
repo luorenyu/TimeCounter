@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">TimeCounter</string>
     <string name="start">Start</string>
-    <string name="preword">任务总耗时 -- </string>
+    <string name="preword">任务总耗时 : </string>
 </resources>

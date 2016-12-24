@@ -1,4 +1,4 @@
-package com.timen4.ronnny.timecounter.bean;
+package com.timen4.ronnny.timecounter.module;
 
 /**
  * Created by luore on 2016/7/22.
@@ -22,6 +22,18 @@ public class CustomTime {
 
     public int getSeconds() {
         return Seconds;
+    }
+
+    public void setHours(int hours) {
+        Hours = hours;
+    }
+
+    public void setMinutes(int minutes) {
+        Minutes = minutes;
+    }
+
+    public void setSeconds(int seconds) {
+        Seconds = seconds;
     }
 
     @Override

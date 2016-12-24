@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    >
 
     <ListView
         android:id="@+id/content_lv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
         />
 
     <TextView
         android:gravity="center_vertical"
         android:paddingLeft="15dp"
         android:id="@+id/tv_result"
-        android:background="@android:color/holo_orange_dark"
-        android:textColor="@android:color/black"
+        android:background="@color/thrid_color"
+        android:textColor="@color/second_color"
         android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -23,12 +28,13 @@
         android:textSize="@dimen/size25"
         />
 
+
     <LinearLayout
         android:id="@+id/edit_item"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:background="#009870"
+        android:background="@color/four_color"
         android:orientation="horizontal"
         android:visibility="gone"
         >
@@ -97,15 +103,14 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:orientation="horizontal"
-        android:background="@android:color/holo_green_dark"
         >
 
         <RelativeLayout
-
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:orientation="horizontal"
+            android:visibility="gone"
             >
             <ImageButton
                 android:id="@+id/btn_equal"
@@ -114,32 +119,40 @@
                 android:layout_width="@dimen/menuIconSize"
                 android:layout_height="@dimen/menuIconSize"
                 />
-
         </RelativeLayout>
         <RelativeLayout
-
+            android:id="@+id/btn_add"
+            android:clickable="true"
+            android:background="@drawable/button_selector"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             >
             <ImageButton
-                android:id="@+id/btn_add"
+                android:clickable="false"
+                android:id="@+id/ib_add"
                 android:layout_centerInParent="true"
                 android:background="@drawable/add"
                 android:layout_width="@dimen/menuIconSize"
                 android:layout_height="@dimen/menuIconSize"
                 />
         </RelativeLayout>
+        <View
+            android:background="#666666"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
         <RelativeLayout
-
+            android:id="@+id/btn_clear"
+            android:clickable="true"
+            android:background="@drawable/button_selector"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             >
             <ImageButton
-                android:id="@+id/btn_clear"
+                android:clickable="false"
                 android:layout_centerInParent="true"
                 android:background="@drawable/full_trash"
                 android:layout_width="@dimen/menuIconSize"
